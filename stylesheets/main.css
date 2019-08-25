@@ -1,0 +1,104 @@
+html {
+  height: 100%;
+}
+
+.logo {
+  height: 50px;
+}
+
+path {
+  fill: #ffffff;
+}
+
+object {
+  pointer-events: none;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background-color: #8c60af;
+  background-position: center center;
+  background-size: cover;
+  font-family: "Lucida Console", Monaco, monospace;
+  color: #ffffff;
+}
+
+/* width >= 1920px and DPR >= 2 */
+@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1920px) and (min-resolution: 2dppx) {
+  body {
+    /*background-image: url(../images/bg-3840x2160.jpg);*/
+  }
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
+main {
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 0.5vh;
+  font-size: 4.6em;
+  line-height: 1em;
+}
+
+h2, footer {
+  font-weight: 300;
+}
+
+h2 {
+  margin: 0;
+  font-size: 2.7em;
+}
+
+#icons {
+  margin: 2vh 0 0;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#icons li {
+  display: inline-block;
+  margin: 1em;
+}
+
+footer {
+  position: absolute;
+  bottom: 2vh;
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
+}
+
+@media screen and (max-width: 667px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.4em;
+  }
+
+  #icons li {
+    margin: 0.8em;
+  }
+
+  #icons a {
+    font-size: 1.8em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
