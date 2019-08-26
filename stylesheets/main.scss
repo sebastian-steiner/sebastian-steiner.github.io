@@ -1,9 +1,9 @@
-$text_color: #4a65c8;
+$text_color: #435aa7;
 $bg_color: #fefff5;
 $line_color: #e9e9e9;
 
-$grid: 25px;
-$grid_space: $grid + 1;
+$grid: 15px !default;
+$grid_space: $grid + 1 !default;
 
 html {
   height: 100%;
@@ -77,6 +77,8 @@ footer {
 }
 
 @media screen and (max-width: 667px) {
+  $grid: 15px;
+  $grid_space: $grid + 1;
   h1 {
     font-size: 2.2em;
   }
