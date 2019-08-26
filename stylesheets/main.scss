@@ -11,6 +11,7 @@ html {
 
 .logo {
   height: 50px;
+  width: auto;
 }
 
 path {
@@ -50,16 +51,6 @@ h1 {
   margin: 0 0 1vh;
   font-size: 4.6em;
   line-height: 1em;
-}
-
-h1:before {
-    content: "{ ";
-    font-size: 1em;
-}
-
-h1:after {
-  content: " }";
-  font-size: 1em;
 }
 
 h2 {
