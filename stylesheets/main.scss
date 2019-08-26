@@ -1,5 +1,9 @@
-$base_color: #ffffff;
-$bg_color: #8c60af;
+$text_color: #7b6dff;
+$bg_color: #fbfcf2;
+$line_color: #b0b0b0;
+
+$grid: 50px;
+$grid_space: $grid + 1;
 
 html {
   height: 100%;
@@ -10,7 +14,7 @@ html {
 }
 
 path {
-  fill: $base_color;
+  fill: $text_color;
 }
 
 object {
@@ -18,24 +22,17 @@ object {
 }
 
 body {
+  background-color: $bg_color;
+  background-image: repeating-linear-gradient(0deg,transparent,transparent $grid,$line_color $grid,$line_color $grid_space),repeating-linear-gradient(-90deg,transparent,transparent $grid,$line_color $grid,$line_color $grid_space);
+  background-size: $grid_space $grid_space;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
-  background-color: $bg_color;
-  //background-image: url(../pictures/background.jpg);
-  background-position: center center;
-  background-size: cover;
   font-family: "Lucida Console", Monaco, monospace;
-  color: $base_color;
+  color: $text_color;
 }
 
-/* width >= 1920px and DPR >= 2 */
-@media screen and (min-width: 1920px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1920px) and (min-resolution: 192dpi), screen and (min-width: 1920px) and (min-resolution: 2dppx) {
-  body {
-    /*background-image: url(../images/bg-3840x2160.jpg);*/
-  }
-}
 // make <a> not change color
 a {
   color: inherit;
@@ -50,13 +47,9 @@ main {
 }
 
 h1 {
-  margin: 0 0 0.5vh;
+  margin: 0 0 1vh;
   font-size: 4.6em;
   line-height: 1em;
-}
-
-h2, footer {
-  font-weight: 300;
 }
 
 h2 {
@@ -93,9 +86,6 @@ footer {
 
   #icons li {
     margin: .8em;
-  }
-  #icons a {
-    font-size: 1.8em;
   }
 
   footer {
