@@ -44,6 +44,17 @@ a:hover {
 }
 
 main {
+  //height: 100%;
+  text-align: center;
+  padding-bottom: 4em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  //height: 4em;
+  font-size: 1em;
   text-align: center;
 }
 
@@ -68,15 +79,7 @@ h2 {
   margin: 1em;
 }
 
-footer {
-  position: absolute;
-  bottom: 2vh;
-  width: 100%;
-  font-size: 1em;
-  text-align: center;
-}
-
-@media screen and (max-width: 667px) {
+@media screen and (max-width: 750px) {
   $grid: 15px;
   $grid_space: $grid + 1;
   h1 {
@@ -94,4 +97,23 @@ footer {
   footer {
     font-size: .8em;
   }
+}
+@media screen and (max-height: 400px) {
+  $grid: 15px;
+  $grid_space: $grid + 1;
+h1 {
+  font-size: 2.2em;
+}
+
+h2 {
+  font-size: 1.4em;
+}
+
+#icons li {
+  margin: .8em;
+}
+
+footer {
+  font-size: .8em;
+}
 }

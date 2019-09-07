@@ -38,6 +38,15 @@ a:hover {
 
 main {
   text-align: center;
+  padding-bottom: 4em;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 1em;
+  text-align: center;
 }
 
 h1 {
@@ -62,15 +71,24 @@ h2 {
   margin: 1em;
 }
 
-footer {
-  position: absolute;
-  bottom: 2vh;
-  width: 100%;
-  font-size: 1em;
-  text-align: center;
-}
+@media screen and (max-width: 750px) {
+  h1 {
+    font-size: 2.2em;
+  }
 
-@media screen and (max-width: 667px) {
+  h2 {
+    font-size: 1.4em;
+  }
+
+  #icons li {
+    margin: 0.8em;
+  }
+
+  footer {
+    font-size: 0.8em;
+  }
+}
+@media screen and (max-height: 400px) {
   h1 {
     font-size: 2.2em;
   }
