@@ -7,10 +7,6 @@ html {
   width: auto;
 }
 
-path {
-  fill: #435aa7;
-}
-
 object {
   pointer-events: none;
 }
